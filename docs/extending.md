@@ -20,7 +20,7 @@ stack profile **[`content@2026.12`](https://github.com/Lazurio/LazurioPlatform/b
 | `@astrojs/check` | 0.9.12 | Type check of `.astro` files |
 | TypeScript | 6.0.3 | `astro check` does not support TypeScript 7 yet |
 | Biome | 2.6.4 | Lint and format in one tool |
-| `@lazurio/module-kit` | 0.2.0 | Listener, shutdown and development server options |
+| `@lazurio/module-kit` | 0.4.0 | Listener, shutdown and development server options |
 
 The App adds, as development dependencies only, React and React DOM 19.3.1
 with `@types/react` and `@types/react-dom` 19.3.0 (the pins of the `app`
@@ -149,10 +149,16 @@ the new state by moving their pin ([adoption.md](adoption.md#taking-a-newer-rele
 ### From 2.0.0 to 2.1.0
 
 Release 2.1.0 moves the App onto the stack profile `content@2026.12` with
-`@lazurio/module-kit` v0.4.0. The brand, the tokens and the screens do not
-change, so the merge takes the template's side in `app/v1/package.json` and
-`bun.lock` and leaves `brand/` and `content/` as the Organization has them;
-then `bun install --frozen-lockfile`, `bun run tokens` and `bun run check`.
+`@lazurio/module-kit` v0.4.0; the brand, the tokens and the screens do not
+change. Resolve the merge by [Who owns which file](#who-owns-which-file):
+
+- `app/v1/package.json` is mixed: take the template's dependency versions and
+  keep the Organization's `lazurio.runtime` `id`, `title`, `company` and
+  `module`;
+- `bun.lock` and the rest the table gives the template, `content/` included,
+  take the template's side; `brand/` stays the Organization's.
+
+Then `bun install --frozen-lockfile`, `bun run tokens` and `bun run check`.
 Modules that pin the Organization's design system move their pin only when
 they want this release.
 
