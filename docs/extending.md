@@ -146,6 +146,16 @@ request keeps the module as it was; an undo is a reviewed revert, never a
 reset. Once merged, release the Organization's design system; its modules take
 the new state by moving their pin ([adoption.md](adoption.md#taking-a-newer-release)).
 
+### From 2.0.0 to 2.1.0
+
+Release 2.1.0 moves the App onto the stack profile `content@2026.12` with
+`@lazurio/module-kit` v0.4.0. The brand, the tokens and the screens do not
+change, so the merge takes the template's side in `app/v1/package.json` and
+`bun.lock` and leaves `brand/` and `content/` as the Organization has them;
+then `bun install --frozen-lockfile`, `bun run tokens` and `bun run check`.
+Modules that pin the Organization's design system move their pin only when
+they want this release.
+
 ### From 1.0.0 to 2.0.0
 
 2.0.0 rebuilds the design system, so the merge touches almost every file. In

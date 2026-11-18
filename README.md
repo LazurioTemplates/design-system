@@ -57,7 +57,7 @@ repository. A website, a knowledge base, an App or presentations add it as a
 Git dependency on a released tag and import from it:
 
 ```json
-"design-system": "github:LazurioTemplates/design-system#v2.0.0"
+"design-system": "github:LazurioTemplates/design-system#v2.1.0"
 ```
 
 ```ts
