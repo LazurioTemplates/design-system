@@ -11,7 +11,7 @@ adoption and for modules that use the design system see
 
 The App is generation **`app/v1`**: the content is Markdown and JSON in Git,
 edited through pull requests, with no data of its own. The tools follow the
-stack profile **[`content@2027.01`](https://github.com/Lazurio/LazurioPlatform/blob/main/docs/stack-profiles.md#content)**:
+stack profile **[`content@2027.02`](https://github.com/Lazurio/LazurioPlatform/blob/main/docs/stack-profiles.md#content)**:
 
 | Tool | Version | Why |
 | --- | --- | --- |
@@ -20,7 +20,7 @@ stack profile **[`content@2027.01`](https://github.com/Lazurio/LazurioPlatform/b
 | `@astrojs/check` | 0.9.12 | Type check of `.astro` files |
 | TypeScript | 6.0.3 | `astro check` does not support TypeScript 7 yet |
 | Biome | 2.6.4 | Lint and format in one tool |
-| `@lazurio/module-kit` | 0.5.0 | Listener, shutdown and development server options |
+| `@lazurio/module-kit` | 0.6.0 | Listener, shutdown and development server options |
 
 The App adds, as development dependencies only, React and React DOM 19.3.1
 with `@types/react` and `@types/react-dom` 19.3.0 (the pins of the `app`
@@ -148,8 +148,8 @@ the new state by moving their pin ([adoption.md](adoption.md#taking-a-newer-rele
 
 ### From 2.1.0 to 2.2.0
 
-Release 2.2.0 moves the App onto the stack profile `content@2027.01` with
-`@lazurio/module-kit` v0.5.0; the brand, the tokens and the screens do not
+Release 2.2.0 moves the App onto the stack profile `content@2027.02` with
+`@lazurio/module-kit` v0.6.0; the brand, the tokens and the screens do not
 change. Resolve the merge by [Who owns which file](#who-owns-which-file):
 
 - `app/v1/package.json` is mixed: take the template's dependency versions and
