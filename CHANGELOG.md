@@ -6,6 +6,8 @@ The dated entries below (`YYYYMMDD`) come from before the template.
 
 ## Unreleased
 
+## 2.2.0 — 2026-11-24
+
 ### For whoever runs it
 
 - The stack profile release `content@2027.02`: `@lazurio/module-kit` v0.6.0
