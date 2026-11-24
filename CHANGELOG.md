@@ -6,6 +6,12 @@ The dated entries below (`YYYYMMDD`) come from before the template.
 
 ## Unreleased
 
+### For whoever runs it
+
+- The stack profile release `content@2027.02`: `@lazurio/module-kit` v0.6.0
+  instead of v0.4.0. The brand, the tokens and the screens do not change. See
+  [From 2.1.0 to 2.2.0](docs/extending.md#from-210-to-220).
+
 ## 2.1.0 — 2026-11-18
 
 On the stack profile `content@2026.12`, and ready as an Application of an
